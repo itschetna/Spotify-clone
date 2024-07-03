@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="./Assets/logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Serif+Makasar&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <icon><i class="fa-sharp fa-solid fa-house"></i></icon>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <icon><i class="fa-solid fa-magnifying-glass"></i></icon>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="Assets/library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-regular fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <div class="box-p1">Create your first playlist</div>
+                        <p class="box-p2">It's easy we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <div class="box-p1">Let's find some podcasts to follow</div>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse Podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="Assets/backward_icon.png">
+                    <img src="Assets/forward_icon.png" class="hide">
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-item hide">Explore Premium</button>
+                    <button class="badge nav-item dark-badge"><i class="fa-regular fa-circle-down"
+                            style="margin-right:20px ;"></i>Install App</button>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+            </div>
+            <h2>Recently Played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="Assets/card1img.jpeg" class="card-img">
+                    <p class="card-title">Top-50 Global</p>
+                    <p class="card-info">Your daily update of the most played...</p>
+                </div>
+            </div>
+            <h2>Trending now near you</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="Assets/card2img.jpeg" class="card-img">
+                    <p class="card-title">Top-50 Global</p>
+                    <p class="card-info">Your daily update of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="Assets/card3img.jpeg" class="card-img">
+                    <p class="card-title"></p>
+                    <p class="card-info">Your daily update of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="Assets/card4img.jpeg" class="card-img">
+                    <p class="card-title"></p>
+                    <p class="card-info">Your daily update of the most played...</p>
+                </div>
+            </div>
+            <h2>Featured Charts</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="Assets/card5img.jpeg" class="card-img">
+                    <p class="card-title">Top-songs Global</p>
+                    <p class="card-info">Your weekly update of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="Assets/card6img.jpeg" class="card-img">
+                    <p class="card-title">Top Songs-India</p>
+                    <p class="card-info">Your weekly update of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="Assets/card1img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most played...</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <div class="pic">
+                <img src="Assets/album_picture.jpeg"style="height:3rem;" >
+            </div>
+                <div class="alb-head">
+                    <p class="album-title" style="height: 0%;">Tu Mileya</p>
+                    <p class="album-para"style="height: 0%;" >Darshan Raval</p>
+                </div>
+                <img src="Assets/album_icon1.png" class="alb">
+                <img src="Assets/album_icon2.png" class="alb" style="height: 2rem;">
+            </div>
+
+            <div class="player">
+                <div class="player-controls">
+                    <img src="Assets/player_icon1.png" class="Players ">
+                    <img src="Assets/player_icon2.png" class="Players ">
+                    <img src="Assets/player_icon3.png" class="Players " style="opacity: 1; height:2rem">
+                    <img src="Assets/player_icon4.png" class="Players ">
+                    <img src="Assets/player_icon5.png" class="Players ">
+                </div>
+                <div class="playback-bar">
+                    <span class="current-time">00:00</span>
+                    <input type="range" min="0" max="100" class="Progress-bar" step="1">
+                    <span class="total-time">3:33</span>
+                </div>
+            </div>
+            <div class="control">
+                <div class="control-con">
+                <img src="Assets/controls_icon1.png"class="con" >
+                <img src="Assets/controld_icon2.png"class="con" style="height: 2rem;">
+                <img src="Assets/controls_icon3.png" class="con"style="height: 1rem;">
+                <img src="Assets/controls_icon4.png"class="con " style="height: 1rem;">
+                <img src="Assets/controls_icon5.png"class="con" >
+                <input type="range" min="0" max="100" class="range" step="1">
+            </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Get elements
+        const playButton = document.querySelector('.Players:nth-child(3)');
+        const progressBar = document.querySelector('.Progress-bar');
+        const currentTime = document.querySelector('.current-time');
+        const totalTime = document.querySelector('.total-time');
+    
+        // Mock data (replace with actual data handling)
+        let isPlaying = false;
+        let progress = 0;
+        const duration = 213; // Total duration in seconds (example)
+    
+        // Play/Pause functionality
+        playButton.addEventListener('click', () => {
+            isPlaying = !isPlaying;
+            if (isPlaying) {
+                playButton.src = 'Assets/player_icon3.png'; // Change to pause icon
+                playMusic();
+            } else {
+                playButton.src = 'Assets/player_icon1.png'; // Change to play icon
+                pauseMusic();
+            }
+        });
+    
+        function playMusic() {
+            // Start playing logic (replace with actual audio play code)
+        }
+    
+        function pauseMusic() {
+            // Pause logic (replace with actual audio pause code)
+        }
+    
+        // Update progress bar and time
+        setInterval(() => {
+            if (isPlaying) {
+                progress += 1; // Increment progress (example)
+                if (progress > duration) {
+                    progress = duration;
+                    isPlaying = false;
+                    playButton.src = 'Assets/player_icon1.png'; // Change to play icon
+                }
+                updateProgressBar();
+            }
+        }, 1000); // Update every second (adjust for smoother progress)
+    
+        function updateProgressBar() {
+            const progressPercent = (progress / duration) * 100;
+            progressBar.value = progressPercent;
+            currentTime.textContent = formatTime(progress);
+        }
+    
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const remainingSeconds = seconds % 60;
+            return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+        }
+    
+        // Initial setup
+        totalTime.textContent = formatTime(duration);
+    </script>
+    
+</body>
+
+</html>
